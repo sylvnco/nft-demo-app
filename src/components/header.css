@@ -1,0 +1,112 @@
+/*
+
+Accent : #4a4e69
+Grey: #E6E8EC
+noir: #141416
+*/
+
+.header {
+    background-color: white;
+    padding: 1em 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .wallet {
+   right: 0;
+   position: absolute;
+   box-shadow: 1px 1px 1px 1px #E6E8EC;
+   color: #141416;
+   border-radius: 25px;
+   padding: 0.5em;
+   right: 5em;
+}
+
+.header .wallet:hover {
+   cursor: pointer;
+   box-shadow: 1px 1px 1px 1px #141416;
+   border-color: #141416;
+ }
+
+nav > ul {
+    list-style: none;
+    width: 250px;
+    display: flex;
+}
+
+nav > ul > li {
+    padding-left: 0.5em;
+    color: #A9A9A9;
+
+}
+
+nav > ul > li > a{
+    color: #A9A9A9;
+    text-decoration: none;
+    font-weight: 300;
+    padding-bottom: 1px;
+    font-size: 1.5em;
+}
+
+nav > ul > li > a.active{
+    color: #141416;
+}
+
+nav > ul > li:not(:last-child):after {
+    content: "|";
+    font-weight: 300;
+    padding-left: 0.5em;
+}
+
+.walletMenu {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    right: 2em;
+    top: 4em;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 4px #9aa1b126, 0 4px 80px -8px #24282f40, 0 4px 4px -2px #5b5e6926;;
+}
+
+.walletMenu > ul {
+    list-style: none;
+    height: 100%;
+}
+
+.walletMenu > ul > li:first-of-type{
+    height: 72%;
+}
+
+.walletMenu > ul > li.balance{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.walletMenu > ul > li.balance > label {
+    margin: 5px auto 20px;
+}
+
+.walletMenu > ul > li.balance > span{
+    font-size: 3em; 
+    line-height: 1em;
+}
+
+.walletMenu > ul > li.balance > span::after {
+    top: -8px;
+}
+
+.walletMenu > ul > li.disconnect {
+    border-top: 1px solid #E6E8EC; 
+    cursor: pointer;   
+}
+
+.walletMenu > ul > li.disconnect > span{
+    position: absolute;
+    bottom: 10px;
+    right: 30%;
+    
+}
